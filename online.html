@@ -1,51 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Online Services - Smart Service Point</title>
 
 <style>
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    color: #333;
+    margin: 0;
+    background: #f4f7fb;
+    color: #222;
 }
 
 header {
     background: #0879c9;
     color: white;
     text-align: center;
-    padding: 30px 15px;
+    padding: 25px 10px;
 }
 
-section {
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 8px 0 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+.section-title {
     text-align: center;
-    padding: 30px 15px;
+    color: #0879c9;
+    margin-bottom: 20px;
 }
 
 .services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
 }
 
 .card {
     background: white;
-    width: 220px;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px #ccc;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+}
+
+.card h3 {
+    color: #0879c9;
+    margin-top: 0;
+}
+
+.card p {
+    color: #555;
+    min-height: 45px;
 }
 
 .button {
     display: inline-block;
-    margin-top: 25px;
-    padding: 12px 25px;
     background: #0879c9;
     color: white;
+    padding: 10px 15px;
+    border-radius: 7px;
     text-decoration: none;
-    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.button:hover {
+    background: #055f9d;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.whatsapp:hover {
+    background: #1da851;
+}
+
+.bottom {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.note {
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 25px 0;
+    text-align: center;
 }
 </style>
 </head>
@@ -53,41 +105,80 @@ section {
 <body>
 
 <header>
-<h1>Online Services</h1>
-<p>Smart Service Point</p>
+    <h1>🌐 Online Services</h1>
+    <p>Jammu & Kashmir Government Online Services</p>
 </header>
 
-<section>
+<div class="container">
 
-<h2>Available Services</h2>
+    <div class="note">
+        📌 Official Government Websites — Click the button to open the service.
+    </div>
 
-<div class="services">
+    <h2 class="section-title">📄 Certificates & Documents</h2>
 
-<div class="card">
-<h3>📝 Online Forms</h3>
-<p>Online form filling and submission assistance.</p>
-</div>
+    <div class="services">
 
-<div class="card">
-<h3>📄 PDF Work</h3>
-<p>PDF editing, merging, splitting and conversion.</p>
-</div>
+        <div class="card">
+            <h3>💰 Income Certificate</h3>
+            <p>Apply/check Income Certificate through J&K JanSugam.</p>
+            <a class="button" href="https://jansugam.jk.gov.in/" target="_blank">
+                Open Official Site
+            </a>
+        </div>
 
-<div class="card">
-<h3>💻 Applications</h3>
-<p>Online applications and registration services.</p>
-</div>
+        <div class="card">
+            <h3>🏠 Domicile Certificate</h3>
+            <p>J&K Domicile Certificate online service.</p>
+            <a class="button" href="https://jansugam.jk.gov.in/" target="_blank">
+                Open Official Site
+            </a>
+        </div>
 
-<div class="card">
-<h3>📑 Document Services</h3>
-<p>Document typing, formatting and preparation.</p>
-</div>
+        <div class="card">
+            <h3>👨‍👩‍👧 Legal Heir Certificate</h3>
+            <p>Information and online government services.</p>
+            <a class="button" href="https://jansugam.jk.gov.in/" target="_blank">
+                Open Official Site
+            </a>
+        </div>
 
-</div>
+        <div class="card">
+            <h3>📑 Category Certificate</h3>
+            <p>SC / ST / OBC / EWS and other category services.</p>
+            <a class="button" href="https://jansugam.jk.gov.in/" target="_blank">
+                Open Official Site
+            </a>
+        </div>
 
-<a class="button" href="index.html">⬅️ Back to Home</a>
+        <div class="card">
+            <h3>📜 Birth & Death Certificate</h3>
+            <p>Online birth/death certificate related services.</p>
+            <a class="button" href="https://jansugam.jk.gov.in/" target="_blank">
+                Open Official Site
+            </a>
+        </div>
 
-</section>
+        <div class="card">
+            <h3>🧾 Character Certificate</h3>
+            <p>Check available certificate services on JanSugam.</p>
+            <a class="button" href="https://jansugam.jk.gov.in/" target="_blank">
+                Open Official Site
+            </a>
+        </div>
 
-</body>
-</html>
+    </div>
+
+    <h2 class="section-title">🌾 Land & Revenue Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>🌾 Land Records / Jamabandi</h3>
+            <p>Search J&K land records and Jamabandi information.</p>
+            <a class="button" href="https://landrecords.jk.gov.in/" target="_blank">
+                Open Land Records
+            </a>
+        </div>
+
+        <div class="card">
